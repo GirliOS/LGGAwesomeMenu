@@ -13,6 +13,7 @@
 		F582243B1B6758780037CE0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F582243A1B6758780037CE0D /* Images.xcassets */; };
 		F582243E1B6758780037CE0D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F582243C1B6758780037CE0D /* LaunchScreen.xib */; };
 		F582244A1B6758780037CE0D /* LGGAwesomeMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58224491B6758780037CE0D /* LGGAwesomeMenuTests.swift */; };
+		F58224571B67607E0037CE0D /* LGGAwesomeMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58224561B67607E0037CE0D /* LGGAwesomeMenuItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F58224431B6758780037CE0D /* LGGAwesomeMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LGGAwesomeMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58224481B6758780037CE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58224491B6758780037CE0D /* LGGAwesomeMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LGGAwesomeMenuTests.swift; sourceTree = "<group>"; };
+		F58224561B67607E0037CE0D /* LGGAwesomeMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGGAwesomeMenuItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		F58224301B6758780037CE0D /* LGGAwesomeMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F58224581B67608B0037CE0D /* LGGAwesomeMenu */,
 				F58224331B6758780037CE0D /* AppDelegate.swift */,
 				F58224351B6758780037CE0D /* ViewController.swift */,
 				F58224371B6758780037CE0D /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				F58224481B6758780037CE0D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F58224581B67608B0037CE0D /* LGGAwesomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F58224561B67607E0037CE0D /* LGGAwesomeMenuItem.swift */,
+			);
+			name = LGGAwesomeMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58224571B67607E0037CE0D /* LGGAwesomeMenuItem.swift in Sources */,
 				F58224361B6758780037CE0D /* ViewController.swift in Sources */,
 				F58224341B6758780037CE0D /* AppDelegate.swift in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  LGGAwesomeMenu
 //
-//  Created by baijf on 7/28/15.
+//  Created by girlios on 7/28/15.
 //  Copyright (c) 2015 GirliOS. All rights reserved.
 //
 
