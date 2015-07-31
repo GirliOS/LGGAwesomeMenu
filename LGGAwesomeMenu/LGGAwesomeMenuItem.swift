@@ -15,7 +15,11 @@ protocol LGGAwesomeMenuItemDelegate:class {
     func AwesomeMenuItemTouchesEnd(item: LGGAwesomeMenuItem)
 }
 
-
+@inline(never) func ScaleRect(rect:CGRect, n:CGFloat) -> CGRect {
+    
+    return CGRectMake((rect.size.width - rect.size.width * n) / 2, (rect.size.height - rect.size.height * n) / 2, rect.size.width * n, rect.size.height * n)
+    
+}
 
 class LGGAwesomeMenuItem: UIImageView {
     
@@ -29,7 +33,6 @@ class LGGAwesomeMenuItem: UIImageView {
     
      weak var delegate:LGGAwesomeMenuItemDelegate?
 
-    
 
     
     init(image: UIImage!, highlightedImage: UIImage?, contentImage: UIImage!, highlightedContentImage: UIImage?) {
@@ -37,6 +40,7 @@ class LGGAwesomeMenuItem: UIImageView {
         self.contentImageView = UIImageView(image: contentImage, highlightedImage: highlightedContentImage)
         super.init(image: image, highlightedImage: highlightedImage)
         self.userInteractionEnabled = true
+        
         addSubview(self.contentImageView)
 
     }
@@ -68,7 +72,30 @@ class LGGAwesomeMenuItem: UIImageView {
         for touch:AnyObject in touches {
             let location = touch.locationInView(self)
             
+            if !CGRectContainsPoint(ScaleRect(self.bounds, 2.0), location) {
+                
+                self.highlighted = false
+            }
         }
     }
+    
+    override func touchesEnded(touches: Set<NSObject>, withEvent event: UIEvent) {
+        
+        self.highlighted = false
+        
+        for touch:AnyObject in touches {
+            let location = touch.locationInView(self)
+            
+            if CGRectContainsPoint(ScaleRect(self.bounds, 2.0), location) {
+                delegate?.AwesomeMenuItemTouchesEnd(self)
+            }
+        }
+    }
+    
+    override func touchesCancelled(touches: Set<NSObject>!, withEvent event: UIEvent!) {
+        self.highlighted = false
+    }
+    
+    
 
 }

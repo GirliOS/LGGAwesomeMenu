@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F54B577F1B6B794400FB62E9 /* LGGAwesomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B577E1B6B794400FB62E9 /* LGGAwesomeMenu.swift */; };
 		F58224341B6758780037CE0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58224331B6758780037CE0D /* AppDelegate.swift */; };
 		F58224361B6758780037CE0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58224351B6758780037CE0D /* ViewController.swift */; };
 		F58224391B6758780037CE0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58224371B6758780037CE0D /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F54B577E1B6B794400FB62E9 /* LGGAwesomeMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGGAwesomeMenu.swift; sourceTree = "<group>"; };
 		F582242E1B6758780037CE0D /* LGGAwesomeMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LGGAwesomeMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58224321B6758780037CE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58224331B6758780037CE0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				F58224561B67607E0037CE0D /* LGGAwesomeMenuItem.swift */,
+				F54B577E1B6B794400FB62E9 /* LGGAwesomeMenu.swift */,
 			);
 			name = LGGAwesomeMenu;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				F58224571B67607E0037CE0D /* LGGAwesomeMenuItem.swift in Sources */,
 				F58224361B6758780037CE0D /* ViewController.swift in Sources */,
 				F58224341B6758780037CE0D /* AppDelegate.swift in Sources */,
+				F54B577F1B6B794400FB62E9 /* LGGAwesomeMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +425,7 @@
 				F582244F1B6758780037CE0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F58224501B6758780037CE0D /* Build configuration list for PBXNativeTarget "LGGAwesomeMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +434,7 @@
 				F58224521B6758780037CE0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
